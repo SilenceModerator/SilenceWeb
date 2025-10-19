@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp Simples</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>Canais</h3>
+            </div>
+            <ul class="contact-list">
+                <li class="contact active" data-chat="geral">
+                    <img src="https://via.placeholder.com/40/808080/FFFFFF?text=G" alt="Avatar">
+                    <span># geral</span>
+                </li>
+                <li class="contact" data-chat="amigos">
+                    <img src="https://via.placeholder.com/40/007BFF/FFFFFF?text=A" alt="Avatar">
+                    <span>Amigos</span>
+                </li>
+                <li class="contact" data-chat="trabalho">
+                    <img src="https://via.placeholder.com/40/28A745/FFFFFF?text=T" alt="Avatar">
+                    <span>Trabalho</span>
+                </li>
+                <li class="contact" data-chat="ana">
+                    <img src="https://via.placeholder.com/40/DC3545/FFFFFF?text=A" alt="Avatar">
+                    <span>Ana Silva</span>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="chat-area">
+            
+            <header class="chat-header">
+                <h2 id="chat-title"># geral</h2>
+                <div class="header-icons">
+                    <i class="fas fa-phone"></i>
+                    <i class="fas fa-video"></i>
+                    <i class="fas fa-info-circle"></i>
+                </div>
+            </header>
+
+            <div class="message-list" id="message-list">
+                <div class="message received">
+                    <span>Bem-vindo ao canal #geral!</span>
+                </div>
+            </div>
+
+            <footer class="chat-input-area">
+                <i class="fas fa-paperclip"></i>
+                <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+                <button id="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
